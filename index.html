@@ -2,48 +2,78 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width= , initial-scale=1.0">
    <title>Document</title>
 </head>
 <body>
-   
-   <h1>Job Application Form</h1>
-   <form action="/submit" method="post" enctype="multipart/form-data">
-   <p>
-      <label for="name">Your Name:</label> <br>
-      <input type="text" name="name" placeholder="Enter your name" id="name" >
-      
-   </p>
-   <p>
-      Your Education: <br>
-      <input type="radio" name="education" value="highschool" id="highschool"> <label for="highschool">High School</label> <br>
-      <input type="radio" name="education" value="bachelor" id="bachelor"> <label for="bachelor">Bachelor Degree</label> <br>
-      <input type="radio" name="education" value="master" id="master"> <label for="master">Master Degree</label> <br>
-      <input type="radio" name="education" value="phd" id="phd"> <label for="phd">PhD</label>
-   </p>
+  
 
-   <p>
-      <label for="job">You Want To Apply For:</label> <br>
-       
-      <select name="job">
-         <option value="webdev">Web Developer</option>
-         <option value="appdev">App Developer</option>
-         <option value="datascience">Data Science</option>
-         <option value="ml">Machine Learning</option>
-      </select>
-      
-   </p>
+   <fieldset>
+       <legend>Login Details</legend>
+      <p>
+         <label for="username">Username:</label>
+         <input type="text" id="username" name="username">
+      </p>
+      <p>
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email">
+      </p>
+      <p>
+         <label for="password">Password:</label>
+         <input type="password" id="password" name="password">
+      </p>
+      <p>
+         <label for="confirm-password">Confirm Password:</label>
+         <input type="password" id="confirm-password" name="confirm-password">
+      </p>
+   </fieldset>
 
-   <p>
-      <label for="resume">Your Resume:</label> <br>
-      <input type="file" name="resume" >
-      
-   </p>
-   <p>
-      <button type="button" >Send Details</button>
-   </p>
+   <fieldset>
+      <legend>Contact Information</legend>
+      <p> 
+         <label for="doorno">Door No:</label>
+         <input type="text" id="doorno" name="doorno">
+      </p>
+      <p>
+         <label for="street">Street:</label>
+         <input type="text" id="street" name="street">
+      </p>
+      <p>
+         <label for="area">Area:</label>
+         <input type="text" id="area" name="area">
+      </p>
+      <p>
+         <label for="district">District:</label>
+         <input type="text" id="district" name="district">
+      </p>
+      <p>
+         <label for="state">State:</label>
+         <input type="text" id="state" name="state">
+      </p>
+      <p>
+         <label for="country">Country:</label>
+         <input type="text" id="country" name="country">
+      </p>
 
-   </form> 
+   </fieldset>
+   <fieldset>
+    <legend>Education Details</legend>
+    <p>
+       <label for="qualification">Qualification:</label>
+       <input type="text" id="qualification" name="qualification">
+    </p>
+    <p>
+       <label for="college">College:</label>
+       <input type="text" id="college" name="college">
+    </p>
+    <p>
+       <label for="year">Year of Passing:</label>
+       <input type="text" id="year" name="year">
+    </p>
+    <p>
+      <input type="submit" value="save" name="lable-form">
+    </p>
+   </fieldset>
 
 </body>
 </html>
