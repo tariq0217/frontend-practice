@@ -1,93 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
 </head>
 <body>
-    <h1>Login Form</h1>
-    
-    <form method="GET" >
-       <p> NAME: <br>
-         <input type="text" name="username" placeholder="username" size="20" maxlength="20" value="admin"></p>
-       <!-- <p> EMAIL: <br>
-         <input type="text" name="text" placeholder="email" size="20" maxlength="20" ></p>
-        <p> SUBJECT: <br>
-         <input type="text" name="text" placeholder="subject" size="20" maxlength="20" ></p>
-         -->
-        
- 
-         <!-- <p>. 
-            MESSAGE: <br>
-            <textarea name="comment" placeholder="Enter your message here..." rows="4" cols="50"></textarea> 
-         </p> -->
-         <p>
-            <!-- i want to learn -->
-            <!-- <input type="radio" name="learntype" value="html" checked> HTML
-            <input type="radio" name="learntype" value="css"> CSS
-            <input type="radio" name="learntype" value="js "> JS -->
-<!-- 
-            My Hobbies Are <br>
-            <input type="checkbox" name="hobbies[]" value="photography" > Photography
-            <input type="checkbox" name="hobbies[]" value="coding" >  Coding
-            <input type="checkbox" name="hobbies[]" value="travelling" > Travelling
-            <input type="checkbox" name="hobbies[]" value="sports" > Sports -->
+   
+   <h1>Job Application Form</h1>
+   <form action="/submit" method="post" enctype="multipart/form-data">
+   <p>
+      <label for="name">Your Name:</label> <br>
+      <input type="text" name="name" placeholder="Enter your name">
+      
+   </p>
+   <p>
+      Your Education: <br>
+      <input type="radio" name="education" value="highschool" id="highschool"> <label for="highschool">High School</label> <br>
+      <input type="radio" name="education" value="bachelor" id="bachelor"> <label for="bachelor">Bachelor Degree</label> <br>
+      <input type="radio" name="education" value="master" id="master"> <label for="master">Master Degree</label> <br>
+      <input type="radio" name="education" value="phd" id="phd"> <label for="phd">PhD</label>
+   </p>
 
-            <!-- Select Your Date Of Birth <br>
-            <select name="dob" id="dob">
-                <option value="">Select Date</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-                <option value="13">13</option>
-                <option value="14">14</option>
-                <option value="15">15</option>
-                <option value="16">16</option>
-                <option value="17" selected>17</option>
-                <option value="18">18</option>
-                <option value="19">19</option>
-                <option value="20">20</option>
-                <option value="21">21</option>
-                <option value="22">22</option>
-                <option value="23">23</option>
-                <option value="24">24</option>
-                <option value="25">25</option>
-                <option value="26">26</option>
-                <option value="27">27</option>  
-                <option value="28">28</option>
-                <option value="29">29</option>
-                <option value="30">30</option>
-                <option value="31">31</option>
-            </select> -->
+   <p>
+      <label for="job">You Want To Apply For:</label> <br>
+       
+      <select name="job">
+         <option value="webdev">Web Developer</option>
+         <option value="appdev">App Developer</option>
+         <option value="datascience">Data Science</option>
+         <option value="ml">Machine Learning</option>
+      </select>
+      
+   </p>
 
-            i want to joining for <br>
-            <select name="join-type" id="join-type" multiple size="5" >
-                <option value="html" >HTML</option>
-                <option value="css">CSS</option>
-                <option value="js">JS</option>  
-                <option value="python">Python</option>
-                <option value="java">Java</option>
-                <option value="c++">C++</option>
-            </select>
-         </p>  
+   <p>
+      <label for="resume">Your Resume:</label> <br>
+      <input type="file" name="resume">
+      
+   </p>
+   <p>
+      <button type="button" >Send Details</button>
+   </p>
 
-         </p>
+   </form> 
 
-         </p>
-
-         <p><input name="login-button" type="submit" value="Login"></p>
-
-    </form>
-
-</body> 
+</body>
 </html>
