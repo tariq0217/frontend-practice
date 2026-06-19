@@ -2,78 +2,44 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <meta name="viewport" content="width= , initial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
 </head>
 <body>
-  
-
-   <fieldset>
-       <legend>Login Details</legend>
+   <form action="submit.php" method="post">
+     
+     <p>
+       <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+     </p>
+     <p>
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="18" max="99" required><br><br>
+     </p>
+     <p>
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+     </p>
+     <p>
+      <label for="range">Price Range:</label>
+      <input type="range" id="range" name="range " min="0" max="1000" step="50" value="500">
+     </p>
+     <p>
+      <label for="web">Website:</label>
+      <input type="url" id="web" name="web">
+     </p>
+     <p>
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time">
+     </p><p>
+      <label for="vweek">Which Week:</label>
+      <input type="week" id="vweek" name="vweek">
+     </p><p>
+      <label for="search">Job Search:</label>
+      <input type="search" id="search" name="search">
+     </p>
       <p>
-         <label for="username">Username:</label>
-         <input type="text" id="username" name="username">
+         <input type="submit" value="Submit">
       </p>
-      <p>
-         <label for="email">Email:</label>
-         <input type="email" id="email" name="email">
-      </p>
-      <p>
-         <label for="password">Password:</label>
-         <input type="password" id="password" name="password">
-      </p>
-      <p>
-         <label for="confirm-password">Confirm Password:</label>
-         <input type="password" id="confirm-password" name="confirm-password">
-      </p>
-   </fieldset>
-
-   <fieldset>
-      <legend>Contact Information</legend>
-      <p> 
-         <label for="doorno">Door No:</label>
-         <input type="text" id="doorno" name="doorno">
-      </p>
-      <p>
-         <label for="street">Street:</label>
-         <input type="text" id="street" name="street">
-      </p>
-      <p>
-         <label for="area">Area:</label>
-         <input type="text" id="area" name="area">
-      </p>
-      <p>
-         <label for="district">District:</label>
-         <input type="text" id="district" name="district">
-      </p>
-      <p>
-         <label for="state">State:</label>
-         <input type="text" id="state" name="state">
-      </p>
-      <p>
-         <label for="country">Country:</label>
-         <input type="text" id="country" name="country">
-      </p>
-
-   </fieldset>
-   <fieldset>
-    <legend>Education Details</legend>
-    <p>
-       <label for="qualification">Qualification:</label>
-       <input type="text" id="qualification" name="qualification">
-    </p>
-    <p>
-       <label for="college">College:</label>
-       <input type="text" id="college" name="college">
-    </p>
-    <p>
-       <label for="year">Year of Passing:</label>
-       <input type="text" id="year" name="year">
-    </p>
-    <p>
-      <input type="submit" value="save" name="lable-form">
-    </p>
-   </fieldset>
-
 </body>
 </html>
